@@ -4,12 +4,14 @@ import { PRODUCTS } from "../../data/produts";
 export const Shop = () => {
   return (
     <>
-      <h1>Shop</h1>
-      <div className="row">
+    <div className="container">
+    <h1>Shop</h1>
+      <div className="row justify-content-center">
         {PRODUCTS.map((productData) => (
           <Product key={productData.id} data={productData} />
         ))}
       </div>
+    </div>
     </>
   );
 };
