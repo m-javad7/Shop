@@ -1,15 +1,16 @@
+import React from "react";
+import {Product} from "./product";
 import { PRODUCTS } from "../../data/produts";
-import { Product } from "./product";
-
 export const Shop = () => {
   return (
     <>
-      <h1>shop</h1>
+      <h1>Shop</h1>
       <div className="row">
-        {PRODUCTS.map((productData) => {
-          return <Product key={productData.id} data={productData} />;
-        })}
+        {PRODUCTS.map((productData) => (
+          <Product key={productData.id} data={productData} />
+        ))}
       </div>
     </>
   );
 };
+ 
